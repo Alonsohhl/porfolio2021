@@ -1,0 +1,1 @@
+export const inputsAreValid=(...e)=>e.every((e=>"number"==typeof e&&!isNaN(e)));
