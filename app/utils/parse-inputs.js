@@ -1,0 +1,1 @@
+export const parseInputs=(...p)=>p.map((p=>parseInt(p)));

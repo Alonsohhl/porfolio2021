@@ -1,0 +1,1 @@
+import{inputsAreValid}from"./utils/inputs-are-valid";import{parseInputs}from"./utils/parse-inputs";export const run=(s,r)=>{s.hideErrors(),r.onClick((()=>{s.hideErrors();const t=r.getInputs(),e=parseInputs(...t);if(inputsAreValid(...e)){const[s,t]=e;r.setResult(s+t)}else r.setResult(""),s.handleAdditionError(t,e)}))};
