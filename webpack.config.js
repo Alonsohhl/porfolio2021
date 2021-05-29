@@ -20,6 +20,20 @@ module.exports = {
         hash: true,
         inject: 'body'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'portfolio-2.html',
+      template: 'src/portfolio-2.html',
+      chunks: ['exampleEntry'],
+      hash: true,
+      inject: 'body'
+  }),
+  new HtmlWebpackPlugin({
+    filename: 'portfolio-3.html',
+    template: 'src/portfolio-3.html',
+    chunks: ['exampleEntry'],
+    hash: true,
+    inject: 'body'
+}),
 
     new CopyWebpackPlugin({
         patterns: [
